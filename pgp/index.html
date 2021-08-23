@@ -1,0 +1,56 @@
+<html lang="en">
+    <head>
+        <title>dewy.dev/pgp/</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/nav.css">
+    </head>
+    <body>
+        <section id="vanta">
+            <h1 id="dewy">PGP</h1>
+            <p>My public PGP key may be downloaded <u><a href="dewy.gpg">here</a></u>.<br><br></p>
+
+            <p>The fingerprint is as follows: <strong>9145 94A5 32FB 4443 51AD 9614 0840 3137 74A6 143D</strong></p>
+        </section>
+
+        <div id="nav-bg" class="btn"></div>
+        <div id="toggle-btn" class="btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="nav-wrap">
+            <nav>
+                <ul>
+                    <li><a class="link" href="../index.html"><strong>Home</strong></a></li>
+                    <li><a class="link" href="../about/index.html">About</a></li>
+                    <li><a class="link" href="../experience/index.html">Work & Experience</a></li>
+                    <li><a class="link" href="../contact/index.html">Contact & Accounts</a></li>
+                    <li><a class="link" href="index.html">PGP</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
+        <script src="../assets/js/nav.js"></script>
+
+        <script>
+            VANTA.DOTS({
+                el: "#vanta",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                spacing: 16.00,
+                color: 0x7b6fca,
+                color2: 0x7a47c8,
+                backgroundColor: 0x20202
+            })
+        </script>
+    </body>
+</html>

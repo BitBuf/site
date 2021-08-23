@@ -1,0 +1,67 @@
+<html lang="en">
+    <head>
+        <title>dewy.dev/about/</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/nav.css">
+    </head>
+    <body>
+        <section id="vanta">
+            <h1 id="dewy">About</h1>
+
+            <p>My online pseudonym is Dewy, and I'm a British-American Java developer of 4 years. Take a look <u><a href="../experience/index.html">here</a></u> for details on my past and current projects.<br><br><br>
+
+                You might also know me as iBuyMountainDew. Here are a few bits of information about me:
+            </p><br>
+
+            <ul>
+                <li>- I've managed a FOSS project with over <strong>200,000</strong> downloads.</li>
+                <li>- I'm able to quickly adapt to novel, very large codebases.</li>
+                <li>- I enjoy working in teams and collaborating on programming tasks and challenges.</li>
+                <li>- I've just been on a long programming sabbath, and I'm ready to jump back into it.</li>
+                <li>- <u><a href="https://goose.pics">I love ducks and geese!</a></u></li>
+            </ul>
+        </section>
+
+        <div id="nav-bg" class="btn"></div>
+        <div id="toggle-btn" class="btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="nav-wrap">
+            <nav>
+                <ul>
+                    <li><a class="link" href="../index.html"><strong>Home</strong></a></li>
+                    <li><a class="link" href="index.html">About</a></li>
+                    <li><a class="link" href="../experience/index.html">Work & Experience</a></li>
+                    <li><a class="link" href="../contact/index.html">Contact & Accounts</a></li>
+                    <li><a class="link" href="../pgp/index.html">PGP</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+        <script src="../assets/js/nav.js"></script>
+
+        <script>
+            const effect = VANTA.WAVES({
+                el: "#vanta",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color: 0x5050f
+            })
+
+            object.onclick = function(){
+                effect.destroy()
+            };
+        </script>
+    </body>
+</html>

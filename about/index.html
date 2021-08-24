@@ -47,7 +47,7 @@
         <script src="../assets/js/nav.js"></script>
 
         <script>
-            const effect = VANTA.WAVES({
+            VANTA.WAVES({
                 el: "#vanta",
                 mouseControls: true,
                 touchControls: true,
@@ -59,9 +59,11 @@
                 color: 0x5050f
             })
 
-            object.onclick = function(){
-                effect.destroy()
-            };
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-YDLPYH4EMF');
         </script>
     </body>
 </html>
